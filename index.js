@@ -28,19 +28,17 @@ const posts = [
         post: "images/post-ducreux.jpg",
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
         likes: 152
+    },
+    {
+        name: "Rembrandt van Rijn",
+        username: "remb1606",
+        location: "Amsterdam, Netherlands",
+        avatar: "images/avatar-rembrandt.jpg",
+        post: "images/post-rembrandt.jpg",
+        comment: "still life sunday, lighting turned out moody but I'm into it",
+        likes: 88
     }
 ]
-
-
-let picEl= document.getElementById("profilePic")
-let userEl=document.getElementById("userName")
-let locEl = document.getElementById("location")
-
-let likesEl = document.getElementById("like")
-let userIdEl = document.getElementById("userID")
-let commentEl = document.getElementById("theComment")
-
-
 
 const feed = document.getElementById("feed")
 
@@ -51,7 +49,7 @@ posts.forEach( post => {
     
     
                 <div class="upperInfo">
-                    <img src="${post.avatar}" class="goodPic userPic" id="profilePic">
+                    <img src="${post.avatar}" class="goodPic userPic">
                     <div class="userNameLoc">
                         <p class="userName" >${post.name}</p>
                         <p class="location" >${post.location}</p>
